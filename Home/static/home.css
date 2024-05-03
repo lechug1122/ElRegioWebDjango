@@ -1,0 +1,483 @@
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+body{
+    /*letra y el margin para que el rectangulo este en la origa*/
+    font-family: "Judson", serif ; 
+    color: white;
+    margin: 0; 
+    /*Fondo de pagina web*/
+    height: 140vh;
+    background:url(src/img/fondo.png) center;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    border :2px;
+}
+header{
+    /*para que sea muetre orizontarl*/
+    display: flex;
+    justify-content: space-between;
+    background:#000000;
+    align-items: center;
+}
+
+/*apartado de logo*/
+.logo{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 2.5%;
+}
+.logo{
+        height: 90px;
+        margin-right: 0px;
+}
+/*color de las letras y elimina la linea azul del los links*/
+a{
+    text-decoration: none;
+    color: white;
+}
+/*tamaño de separacionde los textos*/
+nav a{
+font-weight: 5px;
+    padding:  20px;
+
+}
+/*color cuando se selecciona los links*/
+nav a:hover{
+    color :red;
+}
+
+@media (max-widh:700px){
+    header{
+        justify-content: center;
+        margin-top: 5px;
+        justify-content: center;
+    }
+}
+
+nav {
+    font-size: 130%;
+    font-family: "Judson",serif;
+    /*MODIFICAR EL LUGAR DE LAS LETRAS*/
+    padding: 40px 0px;
+    margin-top: -1%;
+    margin-left: 2%;
+    margin-right: -2%;
+
+}
+/*configuracion de la tarjeta alitas*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*posicion y tamaño del container*/
+.container{
+    
+    width: 350px;
+    height: 500px;
+    margin-left: 3%;
+    margin-top: 3%;
+
+}
+/* configuracion de la tarjeta */
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /*animacion de girar la tarjeta*/
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+/*animacion cuando pasa el curso en la tarjeta*/
+.container:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+/* configuracion del estilo de la tarjeta*/
+
+.front,
+.back{
+height: 100%;
+width: 100%;
+border-radius: 40px;
+box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+position: absolute;
+backface-visibility: hidden;
+
+}
+/*imagen del fondo de la tarjeta*/
+.front{
+    background: url(src/img/front_dese.png);
+    background-size: 350px 500px;
+}
+h1.front1{
+    margin-top: 5%;
+    font-size: 52px;
+    margin-left: 6%;
+    font-family: "DM Serif Text";
+}
+h2.front12{
+    margin-top: 3%;
+    font-size: 40px;
+    margin-left: 7%;
+    font-family: "DM Serif Text";
+    line-height: 54.84px;
+    font-style: italic;
+}
+
+.back{
+    background-color: rgb(43, 34, 34);
+    transform: rotateY(180deg);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.back1{
+    margin-left: 10%;
+}
+.my-button {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .my-button:hover {
+    background-color: black;
+  }
+  .my-button:active {
+    background-color: black;
+  }
+  /*Nuggets*/
+  /*posicion y tamaño del container*/
+.container2{
+    
+    width: 250px;
+    height: 400px;
+    margin-left: -17.5%;
+    margin-top: 3%;
+}
+/* configuracion de la tarjeta */
+.card2{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /*animacion de girar la tarjeta*/
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+/*animacion cuando pasa el curso en la tarjeta*/
+.container2:hover > .card2{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+/* configuracion del estilo de la tarjeta*/
+
+.front2,
+.back2{
+height: 100%;
+width: 100%;
+border-radius: 40px;
+box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+position: absolute;
+backface-visibility: hidden;
+
+}
+/*imagen del fondo de la tarjeta*/
+.front2{
+    background: url(src/img/Nuggets.png);
+    background-size: 250px 400px;
+}
+h1.front2{
+    margin-top: 5%;
+    font-size: 52px;
+    margin-left: 6%;
+    font-family: "DM Serif Text";
+}
+h2.front22{
+    margin-top: 3%;
+    font-size: 20px;
+    margin-left: 7%;
+    font-family: "DM Serif Text";
+
+    font-style: italic;
+}
+
+.back2{
+    background-color: rgb(43, 34, 34);
+    transform: rotateY(180deg);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.back22{
+    margin-left: 10%;
+}
+.my-button2 {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .my-button2:hover {
+    background-color: black;
+  }
+  .my-button2:active {
+    background-color: black;
+  }
+    /*Boneless*/
+  /*posicion y tamaño del container*/
+.container3{
+    
+    width: 250px;
+    height: 400px;
+    margin-left: 8%;
+    margin-top: 3%;
+}
+/* configuracion de la tarjeta */
+.card3{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /*animacion de girar la tarjeta*/
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+/*animacion cuando pasa el curso en la tarjeta*/
+.container3:hover > .card3{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+/* configuracion del estilo de la tarjeta*/
+
+.front3,
+.back3{
+height: 100%;
+width: 100%;
+border-radius: 40px;
+box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+position: absolute;
+backface-visibility: hidden;
+
+}
+/*imagen del fondo de la tarjeta*/
+.front3{
+    background: url(src/img/boneless.png);
+    background-size: 250px 400px;
+}
+h1.front3{
+    margin-top: 5%;
+    font-size: 52px;
+    margin-left: 6%;
+    font-family: "DM Serif Text";
+}
+h2.front32{
+    margin-top: 3%;
+    font-size: 20px;
+    margin-left: 7%;
+    font-family: "DM Serif Text";
+
+    font-style: italic;
+}
+
+.back3{
+    background-color: rgb(43, 34, 34);
+    transform: rotateY(180deg);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.back33{
+    margin-left: 10%;
+}
+.my-button3 {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .my-button3:hover {
+    background-color: black;
+  }
+  .my-button3:active {
+    background-color: black;
+  }
+      /*COMBOS*/
+  /*posicion y tamaño del container*/
+.container4{
+    
+    width: 250px;
+    height: 400px;
+    margin-top: 500px;
+    margin-left: 120px;
+}
+/* configuracion de la tarjeta */
+.card4{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /*animacion de girar la tarjeta*/
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+/*animacion cuando pasa el curso en la tarjeta*/
+.container4:hover > .card4{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+/* configuracion del estilo de la tarjeta*/
+
+.front4,
+.back4{
+height: 100%;
+width: 100%;
+border-radius: 40px;
+box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+position: absolute;
+backface-visibility: hidden;
+
+}
+/*imagen del fondo de la tarjeta*/
+.front4{
+    background: url(src/img/combos.png);
+    background-size: 500px 400px;
+    background-position: 40%;
+}
+h1.front4{
+    margin-top: 5%;
+    font-size: 52px;
+    margin-left: 6%;
+    font-family: "DM Serif Text";
+}
+h2.front42{
+    margin-top: 3%;
+    font-size: 22px;
+    margin-left: 7%;
+    font-family: "DM Serif Text";
+    font-style: italic;
+}
+
+.back4{
+    background-color: rgb(43, 34, 34);
+    transform: rotateY(180deg);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.back44{
+    margin-left: 10%;
+}
+.my-button4 {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .my-button4:hover {
+    background-color: black;
+  }
+  .my-button4:active {
+    background-color: black;
+  }
+
+  /*samplers*/
+.container5{
+    
+    width: 250px;
+    height: 400px;
+    margin-top: 500px;
+    margin-left: 60%;
+    position: absolute;
+}
+/* configuracion de la tarjeta */
+.card5{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /*animacion de girar la tarjeta*/
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+/*animacion cuando pasa el curso en la tarjeta*/
+.container5:hover > .card5{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+/* configuracion del estilo de la tarjeta*/
+
+.front5,
+.back5{
+height: 100%;
+width: 100%;
+border-radius: 40px;
+box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+position: absolute;
+backface-visibility: hidden;
+
+}
+/*imagen del fondo de la tarjeta*/
+.front5{
+    background: url(src/img/samplers.png);
+    background-size: 500px 400px;
+    background-position: 40%;
+}
+h1.front5{
+    margin-top: 5%;
+    font-size: 52px;
+    margin-left: 6%;
+    font-family: "DM Serif Text";
+}
+h2.front52{
+    margin-top: 3%;
+    font-size: 22px;
+    margin-left: 7%;
+    font-family: "DM Serif Text";
+    font-style: italic;
+}
+
+.back5{
+    background-color: rgb(43, 34, 34);
+    transform: rotateY(180deg);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.back55{
+    margin-left: 10%;
+}
+.my-button5 {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .my-button5:hover {
+    background-color: black;
+  }
+  .my-button5:active {
+    background-color: black;
+  }
+

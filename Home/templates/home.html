@@ -1,0 +1,117 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Scripts de los inconos-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-YWcnnkL8jCqPbDasnxGk UH/TFl3VEpJOJulj7VWQfYt3z2eIWgtqYaMnSi+ERYvWXYgA7tZOeIlysIgbOPPvJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type= "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <title>ElRegioWeb</title>
+  <link rel="icon" href="{%static "src/favicon.ico"%}">
+  <header>
+    <!--conectar con el archivo css y eliminar el cache al hora de actualizar -->
+    <link rel="stylesheet" href="{% static 'home.css'%}?{% now " u"="" %}"="">
+      <!--tipografia-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <b href="#" class="logo">
+        <img src="{% static 'src/favicon.ico'%}" alt="Logo de la empresa">
+</a>
+    <nav>
+        <!--Lista de navbar-->
+        <a href="/Home" class="nav-link"> Menu</a>
+        <a href="/articules" class="nav-link">Promociones</a>
+        <a href="/surcunsales" class="nav-link">Ubicaciones</a>
+        <a href="/Nosotros" class="nav-link">Sobre Nosotros</a>
+        <a href="" id = "app"class="nav-link">Registrate</a>
+          <a href="https://www.facebook.com/people/Alitas-y-Boneless-el-Regio/100068200835876/?mibextid=ZbWKwL" target="_blank" class="nav-link"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.facebook.com/messages/t/1988386037891207" target="_blank" class="nav-link"><i class="fab fa-facebook-messenger" ></i></a>
+          <a href="https://wa.link/ft2vb5" target="_blank" class="nav-link"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/elregio_alitasyboneless?igsh=YTUzam1wbGN2aXd1" target="_blank" class="nav-link"><i class="fab fa-instagram"></i></a>
+      <!-- tik tok <a href="#" class="nav-link"><i class="fab fa-tiktok"></i></a>-->   
+    </nav>
+</header>
+
+
+</head>
+<body>
+  <!--parte de tarjeta de alitas-->
+  <div class="container">
+<div class="card">
+    <div class="front">
+    <h1 class="front1">ALITAS</h1>
+    <h2 class="front12">Elige tus salsas favoritas.</h2>
+    </div>
+  
+  <div class="back">
+    <h1 class="back1">Conoce nuestra variedad de Alitas</h1>
+    <button class="my-button">Haz clic aquí</button>
+    </div>
+</div>
+  </div>
+   <!--parte de tarjeta de Combos-->
+   <div class="container4">
+    <div class="card4">
+        <div class="front4">
+        <h1 class="front1">Combos</h1>
+        <h2 class="front42">¡Experimenta el festín definitivo con nuestros Combos de Alitas o Nuggets! 🎉🍗🔥 Incluye crujientes papas, irresistibles aros de cebolla, fresco apio y zanahorias, ¡todo acompañado del aderezo perfecto!</h2>
+        </div>
+      
+      <div class="back4">
+        <h1 class="back44">Conoce nuestra variedad de Combos</h1>
+        <button class="my-button4">Haz clic aquí</button>
+        </div>
+    </div>
+  </div>
+     <!--parte de tarjeta de Samplers-->
+     <div class="container5">
+      <div class="card5">
+          <div class="front5">
+          <h1 class="front1">Samplers</h1>
+          <h2 class="front52">¡Deleita a todos con nuestro Sampler de Alitas que llega para conquistar todos los paladares! 🍗🎉 ¡Variedad que satisface a todos los gustos en cada bocado! ¡Haz de tu reunión un festín inolvidable con nuestras irresistibles opciones!</h2>
+          </div>
+        
+        <div class="back5">
+          <h1 class="back55">Conoce nuestra variedad de Samplers</h1>
+          <button class="my-button5">Haz clic aquí</button>
+          </div>
+      </div>
+    </div>
+
+    <!--parte de tarjeta de Nuggets-->
+    <div class="container2">
+      <div class="card2">
+          <div class="front2">
+          <h1 class="front1">Nuggets</h1>
+          <h2 class="front22">Nuggets de ensueño! 🔥😋 
+            Descubre la magia de cada bocado, irresistiblemente caliente y deliciosamente dorado. ¡Una experiencia de sabor que te dejará deseando más! </h2>
+          </div>
+        
+        <div class="back2">
+          <h1 class="back22">Conoce nuestra variedad de Nuggets</h1>
+          <button class="my-button2">Haz clic aquí</button>
+          </div>
+      </div>
+    </div>
+        <!--parte de tarjeta de Boneles-->
+        <div class="container3">
+          <div class="card3">
+              <div class="front3">
+              <h1 class="front1">Boneless</h1>
+              <h2 class="front32">¡Desata la delicia con nuestros Boneless de otro nivel! 🔥👅 Llenos de intensidad de sabor, prepárate para un festín sin igual. ¡Crujientes por fuera, tiernos por dentro! ¡La perfección en cada bocado!</h2>
+              </div>
+            
+            <div class="back3">
+              <h1 class="back33">Conoce nuestra variedad de Nuggets</h1>
+              <button class="my-button3">Haz clic aquí</button>
+              </div>
+          </div>
+        </div>
+        
+
+      </body>
+</html>
