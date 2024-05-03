@@ -1,0 +1,98 @@
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+body{
+    /*letra y el margin para que el rectangulo este en la origa*/
+    font-family: "Judson", serif ; 
+    color: white;
+    margin: 0; 
+    /*Fondo de pagina web*/
+    height: 120vh;
+    background:url(src/img/fondo.png) center;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    border :2px;
+}
+header{
+    /*para que sea muetre orizontarl*/
+    display: flex;
+    justify-content: space-between;
+    background:#000000;
+    align-items: center;
+}
+
+/*apartado de logo*/
+.logo{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 2.5%;
+}
+.logo{
+        height: 90px;
+        margin-right: 0px;
+}
+/*color de las letras y elimina la linea azul del los links*/
+a{
+    text-decoration: none;
+    color: white;
+}
+/*tamaño de separacionde los textos*/
+nav a{
+font-weight: 5px;
+    padding:  20px;
+
+}
+/*color cuando se selecciona los links*/
+nav a:hover{
+    color :red;
+}
+
+@media (max-widh:700px){
+    header{
+        justify-content: center;
+        margin-top: 5px;
+        justify-content: center;
+    }
+}
+
+nav {
+    font-size: 130%;
+    font-family: "Judson",serif;
+    /*MODIFICAR EL LUGAR DE LAS LETRAS*/
+    padding: 40px 0px;
+    margin-top: -1%;
+    margin-left: 2%;
+    margin-right: -2%;
+
+}
+
+/*container*/
+.container{
+    width: 512px;
+    height: 596px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    top: 50%;
+    left: 32.5%;
+}
+.container::before {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    background-color: gray;
+    border-radius: 62px;
+    content: "";
+    inset: 0;
+    opacity: 0.5;
+    
+}
+
+h1{
+    font-family: "Days One", sans-serif;
+    color: white;
+    font-size: 40px;
+    position: relative;
+}
