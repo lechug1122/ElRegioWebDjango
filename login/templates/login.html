@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Scripts de los inconos-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-YWcnnkL8jCqPbDasnxGk UH/TFl3VEpJOJulj7VWQfYt3z2eIWgtqYaMnSi+ERYvWXYgA7tZOeIlysIgbOPPvJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" type= "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -13,7 +14,7 @@
   <link rel="icon" href="{%static "src/favicon.ico"%}">
   <header>
     <!--conectar con el archivo css y eliminar el cache al hora de actualizar -->
-    <link rel="stylesheet" href="{% static 'register.css'%}?{% now " u"="" %}"="">
+    <link rel="stylesheet" href="{% static 'login.css'%}?{% now " u"="" %}"="">
       <!--tipografia-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,14 +39,11 @@
 </header>
 <body>
     <div class="container">
-        <h1>Regístrate</h1>
-        <input type="text", name ="nombre", class= "nombre" id="nombre", placeholder ="Escribe tu nombe">
-        <input type="text", name= "apellidos", class= "input", id= "apellidos", placeholder="Escribe tus Apellidos">
-        <input type="text", name="usuario", class="input", id="usuario", placeholder="Ingresa nombre de usuario">
+        <h1>Iniciar Sesion</h1>
         <input type="text", name="gmail", class="input", id="gmail", placeholder="Ingrese Correo Electronico">
         <input type="password", name="password", class="input", id="password", placeholder="Ingrese Contraseña">
-        <button class="button_reg">Registrate</button>
-        <a class="direccion" href="/login">¿Ya tienes una cuenta? Inicia Sesión</a>
+        <button class="button_reg">Ingresar</button>
+        <a class="direccion" href="/register">¿No tienes una cuenta? Crea uno</a>
 </div>
 </body>
 </head>
