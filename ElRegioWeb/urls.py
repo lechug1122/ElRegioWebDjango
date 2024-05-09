@@ -21,5 +21,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("Home.urls")),
     path("register", include("Register.urls")),
-    path('login', include("login.urls"))
+    path('login', include("login.urls")),
+    path('alitas', include("Alitas.urls")),
+    path('nuggets', include("Nuggets.urls")),
+    path('boneless', include("boneless.urls")),
+    path("combos", include("combos.urls")),
+    path("samplers",include("samplers.urls"))
 ]

@@ -39,7 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "Home",
     "Register",
-    "login"
+    "login",
+    "Alitas",
+    "Nuggets",
+    "boneless",
+    "combos",
+    "samplers"
 ]
 
 MIDDLEWARE = [
