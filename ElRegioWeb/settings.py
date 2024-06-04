@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     "Nuggets",
     "boneless",
     "combos",
-    "samplers"
+    "samplers",
+    "carrito",
+    "nosotros"
 ]
 
 MIDDLEWARE = [

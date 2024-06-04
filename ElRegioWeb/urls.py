@@ -26,5 +26,7 @@ urlpatterns = [
     path('nuggets', include("Nuggets.urls")),
     path('boneless', include("boneless.urls")),
     path("combos", include("combos.urls")),
-    path("samplers",include("samplers.urls"))
+    path("samplers",include("samplers.urls")),
+    path("carrito", include("carrito.urls")),
+    path("nosotros", include("nosotros.urls"))
 ]
